@@ -9,6 +9,7 @@ dependencies = [
     "jupyter>=1.1.1",
     "jupytext>=1.17.2",
     "matplotlib>=3.10.3",
+    "mlxtend>=0.23.4",
     "notebook>=7.4.3",
     "numpy>=2.3.1",
     "pandas>=2.3.0",
