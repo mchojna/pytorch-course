@@ -2,3 +2,5 @@
 .DS_Store
 __pycache__
 data
+05_pytorch_going_modular/data
+05_pytorch_going_modular/models
