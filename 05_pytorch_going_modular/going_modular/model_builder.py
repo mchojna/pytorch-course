@@ -1,24 +1,27 @@
 """
-Contains PyTorch model code to instantiate a TinyVGG model from CNN Explainer website
+Contains PyTorch model code to instantiate a TinyVGG model from
+CNN Explainer website
 """
 
 import torch
-
 from torch import nn
 
 
 class TinyVGG(nn.Module):
     """Creates the TinyVGG architecture.
 
-    Replicates the TinyVGG architecture from the CNN explainer website in PyTorch  
+    Replicates the TinyVGG architecture from the CNN explainer
+    website in PyTorch
 
     Args:
         input_shape: An integer indicating number of input channels
-        hidden_units: An integer indicating number of hidden units between layers
+        hidden_units: An integer indicating number of hidden units
+        between layers
         output_shape: An integer indicating number of output units
     """
 
-    def __init__(self, input_shape: int, hidden_units: int, output_shape: int) -> None:
+    def __init__(self, input_shape: int,
+                 hidden_units: int, output_shape: int) -> None:
         super().__init__()
         self.conv_block_1 = nn.Sequential(
             nn.Conv2d(in_channels=input_shape,
