@@ -6,8 +6,9 @@ import os
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
-NUM_WORKERS = 1
+NUM_WORKERS = 0
 BATCH_SIZE = 32
+
 
 def create_dataloaders(
     train_dir: str,
@@ -65,14 +66,12 @@ def create_dataloaders(
         batch_size=batch_size,
         num_workers=num_workers,
         shuffle=True,
-        pin_memory=True,
     )
     test_dataloader = DataLoader(
         dataset=test_data,
         batch_size=batch_size,
         num_workers=num_workers,
         shuffle=False,
-        pin_memory=True,
     )
 
     return train_dataloader, test_dataloader, class_names
