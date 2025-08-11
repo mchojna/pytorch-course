@@ -4,3 +4,5 @@ __pycache__
 data
 05_pytorch_going_modular/data
 05_pytorch_going_modular/models
+05_pytorch_going_modular_exercises/data
+05_pytorch_going_modular_exercises/models
