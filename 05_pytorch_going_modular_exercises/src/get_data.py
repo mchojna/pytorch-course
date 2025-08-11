@@ -14,7 +14,7 @@ def get_data(
     data_url_str: str = "https://github.com/mrdbourke/pytorch-deep-learning/raw/main/data/pizza_steak_sushi.zip",
     file_name_str: str = "pizza_steak_sushi.zip"
 ) -> None:
-    """Downloads data from GitHub
+    """Downloads data from GitHub.
 
     Args:
         data_dir_str (str, optional): Path do data directory.
@@ -61,5 +61,6 @@ def get_data(
 
     print("Finished getting data...")
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     get_data()
