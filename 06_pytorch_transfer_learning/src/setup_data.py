@@ -59,7 +59,7 @@ def create_dataloaders(
         dataset=test_data,
         batch_size=batch_size,
         num_workers=num_workers,
-        shuffle=True,
+        shuffle=False,
         pin_memory=True,
     )
 
